@@ -13,11 +13,11 @@ contract StorageFactory {
         getSimpleStorageContract.push(simpleStorage);
     }
     
-    function setSFNumber(uint256 _simpleStorageIndex, uint256 _simpleStorageNumber) public {
+    function setStorageFactoryNumber(uint256 _simpleStorageIndex, uint256 _simpleStorageNumber) public {
         getSimpleStorageContract[_simpleStorageIndex].setFavoriteNumber(_simpleStorageNumber);
     }
     
-    function getSFNumber(uint256 _simpleStorageIndex) public view returns (uint256) {
+    function getStorageFactoryNumber(uint256 _simpleStorageIndex) public view returns (uint256) {
         return getSimpleStorageContract[_simpleStorageIndex].getFavoriteNumber();
     }
 }
