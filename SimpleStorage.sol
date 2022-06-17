@@ -1,10 +1,10 @@
-// SPDX-License-Identifier: MIT
+// SPDX-License-Identifier: Unlicense
 
 pragma solidity ^0.8.0;
 
 contract SimpleStorage {
 
-    uint256 favoriteNumber;
+    uint256 private favoriteNumber;
 
     struct Person {
         string name;
