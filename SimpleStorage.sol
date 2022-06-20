@@ -4,27 +4,27 @@ pragma solidity ^0.8.0;
 
 contract SimpleStorage {
 
-    uint256 private _favoriteNumber;
+    uint256 public f;
 
     struct Person {
         string name;
-        uint256 _favoriteNumber;
+        uint256 favoriteNumber;
     }
 
     Person[] public getPersonAndNumber;
 
     mapping(string => uint256) public getPersonNumber;
 
-    function setPerson(string memory _name, uint256 favoriteNumber) external {
-        getPersonAndNumber.push(Person(_name, favoriteNumber));
-        getPersonNumber[_name] = favoriteNumber;
+    function setPerson(string memory _name, uint256 _favoriteNumber) external {
+        getPersonAndNumber.push(Person(_name, _favoriteNumber));
+        getPersonNumber[_name] = _favoriteNumber;
     }
 
-    function setFavoriteNumber(uint256 favoriteNumber) internal {
-        _favoriteNumber = favoriteNumber;
+    function setFavoriteNumber(uint256 _favoriteNumber) internal {
+        favoriteNumber = _favoriteNumber;
     }
 
     function getFavoriteNumber() internal view returns (uint256) {
-        return _favoriteNumber;
+        return favoriteNumber;
     }
 }
