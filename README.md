@@ -1,1 +1,1 @@
-## Simple Storage Factory
+# Simple Storage Factory
