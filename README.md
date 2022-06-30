@@ -1,19 +1,23 @@
 # Simple Storage Factory
 
-Simple Storage Factory deploys Storage Factory contracts by importing from them.
+**Simple Storage Factory deploys Storage Factory contracts by importing from them.**
 
-# getSimpleStorageContract
+```
+getSimpleStorageContract
+```
+*Array to retrieve addresses deployed Simple Storage contracts.*
 
-Array to retrieve addresses deployed Simple Storage contracts.
+```
+setSimpleStorageContract()
+```
+*Function to deploy Simple Storage contract and push it into getSimpleStorageContract.*
 
-# setSimpleStorageContract
+```
+setStorageFactoryNumber()
+```
+*Function to store your favorite Number to a deployed Simple Storage contract.*
 
-Function to deploy Simple Storage contract and push it into getSimpleStorageContract.
-
-# setStorageFactoryNumber
-
-Function to store your favorite Number to a deployed Simple Storage contract.
-
-# getStorageFactoryNumber
-
-Retrieve your favorite number by entering the index of getSimpleStorageContract.
+```
+getStorageFactoryNumber()
+```
+*Retrieve your favorite number by entering the index of getSimpleStorageContract.*
