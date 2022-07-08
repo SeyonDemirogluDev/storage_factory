@@ -14,10 +14,10 @@ contract SimpleStorageFactory {
     }
     
     function setStorageFactoryNumber(uint256 simpleStorageIndex, uint256 simpleStorageNumber) external {
-        contracts[_simpleStorageIndex].setFavoriteNumber(_simpleStorageNumber);
+        contracts[simpleStorageIndex].setFavoriteNumber(simpleStorageNumber);
     }
     
     function getStorageFactoryNumber(uint256 contractSimpleStorageIndex) external view returns (uint256) {
-        return contracts[_contractSimpleStorageIndex].getFavoriteNumber();
+        return contracts[contractSimpleStorageIndex].getFavoriteNumber();
     }
 }
