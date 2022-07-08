@@ -23,6 +23,4 @@ contract SimpleStorage {
     function setFavoriteNumber(uint256 _favoriteNumber) external {
         favoriteNumber = _favoriteNumber;
     }
-
-    // getFN => uint256
 }
