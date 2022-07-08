@@ -6,18 +6,18 @@ import "./SimpleStorage.sol";
 
 contract SimpleStorageFactory {
 
-    SimpleStorage[] public getSimpleStorageContract;
+    SimpleStorage[] public contracts;
     
     function setSimpleStorageContract() external {
         SimpleStorage simpleStorage = new SimpleStorage();
-        getSimpleStorageContract.push(simpleStorage);
+        contracts.push(simpleStorage);
     }
     
     function setStorageFactoryNumber(uint256 simpleStorageIndex, uint256 simpleStorageNumber) external {
-        getSimpleStorageContract[_simpleStorageIndex].setFavoriteNumber(_simpleStorageNumber);
+        contracts[_simpleStorageIndex].setFavoriteNumber(_simpleStorageNumber);
     }
     
     function getStorageFactoryNumber(uint256 contractSimpleStorageIndex) external view returns (uint256) {
-        return getSimpleStorageContract[_contractSimpleStorageIndex].getFavoriteNumber();
+        return contracts[_contractSimpleStorageIndex].getFavoriteNumber();
     }
 }
