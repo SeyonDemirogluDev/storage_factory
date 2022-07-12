@@ -4,7 +4,7 @@ pragma solidity ^0.8.0;
 
 contract SimpleStorage {
 
-    uint256 internal favoriteNumber;
+    uint256 public favoriteNumber;
 
     struct Person {
         string name;
@@ -22,9 +22,5 @@ contract SimpleStorage {
 
     function setFavoriteNumber(uint256 _favoriteNumber) external {
         favoriteNumber = _favoriteNumber;
-    }
-
-    function getFavoriteNumber() external view returns (uint256) {
-        return favoriteNumber;
     }
 }
