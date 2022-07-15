@@ -1,7 +1,3 @@
-// SPDX-License-Identifier: MIT
-
-pragma solidity ^0.8.0;
-
 contract SimpleStorage {
 
     uint256 public favoriteNumber;
@@ -13,7 +9,7 @@ contract SimpleStorage {
 
     Person[] public getPersonAndNumber;
 
-    mapping(string => uint256) public getPersonNumber;
+    mapping (string => uint256) public getPersonNumber;
 
     function setPerson(string memory _name, uint256 _favoriteNumber) external {
         getPersonAndNumber.push(Person(_name, _favoriteNumber));
