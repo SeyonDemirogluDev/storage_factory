@@ -13,11 +13,11 @@ setSimpleStorageContract()
 *Function to deploy Simple Storage contract and push it into getSimpleStorageContract.*
 
 ```
-setStorageFactoryNumber()
+setStorageFactoryNum()
 ```
 *Function to store your favorite Number to a deployed Simple Storage contract.*
 
 ```
-getStorageFactoryNumber()
+getStorageFactoryNum()
 ```
 *Retrieve your favorite number by entering the index of getSimpleStorageContract.*
