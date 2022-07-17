@@ -1,26 +1,22 @@
 contract SimpleStorage {
 
-    uint256 public favoriteNumber;
+    uint256 public favoriteNum;
 
     struct Person {
         string name;
-        uint256 favoriteNumber;
+        uint256 favoriteNum;
     }
 
-    Person[] public getPersonAndNumber;
+    Person[] public getPersonAndNum;
 
-    mapping (string => uint256) public getPersonNumber;
+    mapping (string => uint256) public getPersonNum;
 
-    function setPerson(string memory _name, uint256 _favoriteNumber) external {
-        getPersonAndNumber.push(Person(_name, _favoriteNumber));
-        getPersonNumber[_name] = _favoriteNumber;
+    function setPerson(string memory _name, uint256 _favoriteNum) public {
+        getPersonAndNum.push(Person(_name, _favoriteNum));
+        getPersonNum[_name] = _favoriteNum;
     }
 
-    function setFavoriteNumber(uint256 _favoriteNumber) public {
-        favoriteNumber = _favoriteNumber;
-    }
-
-    function getFavoriteNumber() public view returns (uint256) {
-        return favoriteNumber;
+    function setFavoriteNumber(uint256 _favoriteNum) public {
+        favoriteNum = _favoriteNum;
     }
 }
