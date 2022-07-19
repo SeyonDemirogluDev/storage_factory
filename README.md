@@ -1,11 +1,10 @@
 # Simple Storage Factory
-
 **Simple Storage Factory deploys Storage Factory contracts by importing from them.**
 
 ```
 getSimpleStorageContract
 ```
-*Array to retrieve addresses deployed Simple Storage contracts.*
+*Array to retrieve addresses of deployed Simple Storage contracts.*
 
 ```
 setSimpleStorageContract()
@@ -15,7 +14,7 @@ setSimpleStorageContract()
 ```
 setStorageFactoryNum()
 ```
-*Function to store your favorite Number to a deployed Simple Storage contract.*
+*Function to store your favorite number to a deployed Simple Storage contract.*
 
 ```
 getStorageFactoryNum()
@@ -23,23 +22,22 @@ getStorageFactoryNum()
 *Retrieve your favorite number by entering the index of getSimpleStorageContract.*
 
 # Simple Storage
-
 **Simple Storage is a simple contract which is designed to store your favorite number.**
 
 ```
 favoriteNum
 ```
-*Your favorite number, which is retrieveable.*
+*Your favorite number.*
 
 ```
 Person
 ```
-*Struct for storing multiple traits (datatypes) under a single variable.*
+*Structure for storing multiple datatypes under a single variable.*
 
 ```
 getPersonAndNum
 ```
-*Array to retrieve traits from Person.*
+*Array to retrieve traits from `Person`.*
 
 ```
 getPersonNum
