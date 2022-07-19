@@ -11,12 +11,12 @@ contract SimpleStorage {
 
     mapping (string => uint256) public getPersonNum;
 
-    function setPerson(string memory _name, uint256 _favoriteNum) public {
+    function setPerson(string memory _name, uint256 _favoriteNum) external {
         getPersonAndNum.push(Person(_name, _favoriteNum));
         getPersonNum[_name] = _favoriteNum;
     }
 
-    function setFavoriteNumber(uint256 _favoriteNum) public {
+    function setFavoriteNum(uint256 _favoriteNum) external {
         favoriteNum = _favoriteNum;
     }
 }
