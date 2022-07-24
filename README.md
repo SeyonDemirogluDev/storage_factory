@@ -25,7 +25,7 @@ getStorageFactoryNum()
 **Simple Storage is a simple contract which is designed to store your favorite number.**
 
 ```
-favoriteNum
+_favoriteNum
 ```
 *Your favorite number.*
 
@@ -52,4 +52,9 @@ setPerson()
 ```
 setFavoriteNum()
 ```
-*Define your favorite number.*
+*Sets your favorite number.*
+
+```
+getFavoriteNum()
+```
+*Returns your favorite number.*
